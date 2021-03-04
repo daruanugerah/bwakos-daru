@@ -1,3 +1,4 @@
+import 'package:bwakos/page/home_page.dart';
 import 'package:bwakos/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,8 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        bottom: false, //note: this parameter for ios which bottom line have white space
+        bottom:
+            false, //note: this parameter for ios which bottom line have white space
         child: Stack(
           children: [
             Align(
@@ -56,7 +58,12 @@ class SplashPage extends StatelessWidget {
                         'Explore Now',
                         style: whiteTextStyle.copyWith(fontSize: 18),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                     ),
                   )
                 ],

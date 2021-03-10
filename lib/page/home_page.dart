@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
             ),
             //note: popular cities
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.only(left: 24),
               child: Text(
                 'Popular Cities',
                 style: regularTextStyle.copyWith(fontSize: 16),
@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
             ),
             //note: recommended space
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.only(left: 24),
               child: Text(
                 'Recommended Space',
                 style: regularTextStyle.copyWith(fontSize: 16),

@@ -1,3 +1,4 @@
+import 'package:bwakos/page/error_page.dart';
 import 'package:bwakos/theme.dart';
 import 'package:bwakos/widget/facility_item.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,13 @@ class DetailPage extends StatelessWidget {
       if (await canLaunch(url)) {
         launch(url);
       } else {
-        throw (url);
+        //throw (url);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ErrorPage(),
+          ),
+        );
       }
     }
 

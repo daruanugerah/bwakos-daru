@@ -1,3 +1,4 @@
+
 class SpaceModel {
   int id;
   String name;
@@ -43,6 +44,7 @@ class SpaceModel {
     phone = json["phone"];
     mapUrl = json["map_url"];
     //photos = List<String>.from(json["photos"].map((x) => x));
+    photos = json['photos'];
     numberOfKitchen = json["number_of_kitchens"];
     numberOfBedroom = json["number_of_bedrooms"];
     numberOfCupboard = json["number_of_cupboards"];

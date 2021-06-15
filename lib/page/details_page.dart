@@ -213,25 +213,25 @@ class DetailPage extends StatelessWidget {
                       ),
                       //note: BUTTON
                       Container(
-                        margin: EdgeInsets.symmetric(
-                          horizontal: 24,
-                        ),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width - (2 * 24),
-                        child: RaisedButton(
-                          color: purpleColor,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(17),
+                          margin: EdgeInsets.symmetric(
+                            horizontal: 24,
                           ),
-                          child: Text(
-                            'Book Now',
-                            style: whiteTextStyle.copyWith(fontSize: 18),
+                          height: 50,
+                          width: MediaQuery.of(context).size.width - (2 * 24),
+                          child: RaisedButton(
+                            color: purpleColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(17),
+                            ),
+                            child: Text(
+                              'Book Now',
+                              style: whiteTextStyle.copyWith(fontSize: 18),
+                            ),
+                            onPressed: () {
+                              launchUrl('tel:${space.phone}'); //must real device
+                            },
                           ),
-                          onPressed: () {
-                            launchUrl('tel:${space.phone}'); //must real device
-                          },
-                        ),
-                      ),
+                          ),
                       SizedBox(
                         height: 40,
                       ),

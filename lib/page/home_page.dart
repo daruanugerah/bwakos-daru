@@ -85,6 +85,9 @@ class HomePage extends StatelessWidget {
                     city: CityModel(
                         id: 2, name: 'Surabaya', imageUrl: 'assets/city3.png'),
                   ),
+                  SizedBox(
+                    width: 20,
+                  ),
                 ],
               ),
             ),
